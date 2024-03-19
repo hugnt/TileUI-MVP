@@ -1,0 +1,289 @@
+/* banner  */
+.banner {
+    height: 100%;
+    background-color: #fff;
+}
+
+.banner .banner-title {
+    position: absolute;
+    top: 20%;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.banner .banner-title .big-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Banner';
+}
+
+.banner .banner-title .sec-title {
+    font-size: 3rem;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.banner .descProduct-swipper .swiper-slide {
+    position: relative;
+}
+
+.banner .descProduct-swipper .swiper-slide::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000000;
+    background: linear-gradient(270deg, #000000 -20%, rgba(255, 255, 255, 0.12) 80%);
+    background: -webkit-linear-gradient(270deg, #000000 -20%, rgba(255, 255, 255, 0.12) 80%);
+    background: -moz-linear-gradient(270deg, #000000 -20%, rgba(255, 255, 255, 0.12) 80%);
+    z-index: 2;
+}
+.banner .descProduct-swipper .readmore {
+    position: absolute;
+    left: 0;right:0;
+    bottom: 3rem;
+    width: 100%;
+    z-index: 5;
+   
+}
+.banner .descProduct-swipper .readmore .name{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1rem;
+    background-color: #00000077;
+    margin-right: 1rem;
+    border-radius: .5rem;
+}
+.banner .descProduct-swipper .readmore .btn-readmore{
+    color: #000;
+    padding: 1rem;
+    border: 1px solid #000;
+}
+.banner .descProduct-swipper .readmore .btn-readmore:hover{
+    color: #fff;
+    padding: 1rem;
+    border: 1px solid #fff;
+    background-color: var(--primary-color);
+}
+.banner .product-swipper {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    /* transform: translateY(-50%); */
+    top: 60%;
+    width: 50%;
+    height: 40%;
+}
+
+.banner .product-swipper .swiper-slide {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    opacity: 0.5;
+}
+.banner .product-swipper .swiper-slide-active {
+   opacity: 1;
+}
+
+.banner .product-swipper .swiper-pagination {
+    width: auto;
+    bottom: 1rem !important;
+}
+
+.banner .product-swipper .swiper-pagination .swiper-pagination-bullet {
+    border-radius: 0 !important;
+    width: 16px;
+    height: 5px;
+}
+
+
+section.p-category {
+    background: url('../assets/images/bg-light2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/* product - all  */
+section.p-all {
+    background: url('../assets/images/bg-white.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+section.p-all .search-box,
+section.p-all .category,
+section.p-all .material,
+section.p-all .size {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+section.p-all .input-group i {
+    background-color: transparent;
+    border: none;
+    color: var(--dark-color);
+}
+
+section.p-all .input-group {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+section.p-all .input-group input::placeholder {
+    color: var(--dark-color);
+}
+
+section.p-all .input-group input {
+    background-color: transparent;
+    border: none;
+}
+
+section.p-all .form-control:focus {
+    color: var(--dark-color);
+    background-color: transparent;
+    border: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+section.p-all .filter .head-title {
+    border-bottom: 1px solid var(--dark-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.p-all .filter .head-title .title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+
+section.p-all .form-check-input:checked {
+    background-color: var(--gold-bold);
+    border-color: var(--gold-bold);
+}
+
+section.p-all .form-check-input:focus {
+    color: var(--gold-bold);
+    box-shadow: 0 0 0 0.25rem rgba(228, 217, 117, 0.25);
+}
+
+
+section.p-all .right-side .p-item {
+    margin-bottom: 2rem;
+}
+
+section.p-all .right-side .p-item .img-box {
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    transform: translateY(5px);
+    overflow: hidden;
+    height: 15rem;
+}
+
+section.p-all .right-side .p-item .img-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 6px solid var(--primary-color);
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 8;
+    background-color: #00000044;
+}
+
+section.p-all .right-side .p-item .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.p-all .right-side .p-item .readmore {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 9;
+
+}
+
+section.p-all .right-side .p-item .readmore span {
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: .2rem;
+
+
+}
+
+section.p-all .right-side .p-item:hover img {
+    transform: scale(1.2);
+
+}
+
+section.p-all .right-side .p-item .readmore span:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+
+}
+
+section.p-all .right-side .p-item .p-name {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+section.p-all .right-side .p-item:hover .img-box::after {
+    opacity: 1;
+}
+
+section.p-all .right-side .p-item:hover .readmore {
+    display: flex;
+}
+
+section.p-all .right-side .p-item:hover .p-name {
+    background-color: var(--primary-color);
+}
+
+section.p-all .right-side .pagination {}
+
+section.p-all .right-side .pagination div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #f2f2f2;
+    color: #000;
+    margin-right: 1rem;
+
+}
+
+.active-page {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
